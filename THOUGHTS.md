@@ -13,6 +13,8 @@ _Be transparent about which AI tools you used and how. For example:_
 
 <!-- Write your notes here -->
 
+ - _"I used Claude Opus 4.7 on the Pro plan to ensure my php and composer were installed and on the right versions"_
+
 
 ## Architecture Decisions
 
