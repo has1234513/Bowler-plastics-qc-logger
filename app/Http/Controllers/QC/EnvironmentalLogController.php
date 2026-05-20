@@ -14,7 +14,7 @@ class EnvironmentalLogController extends Controller
 {
     public function index(): Response
     {
-        return Inertia::render('QC/Index', [
+        return Inertia::render('qc/index', [
             'logs' => EnvironmentalLog::query()
                 ->orderByDesc('logged_at')
                 ->get(),
@@ -27,11 +27,16 @@ class EnvironmentalLogController extends Controller
     ): RedirectResponse {
         $conditions = $weather->fetchCurrentConditions();
 
-        EnvironmentalLog::create([
+        $log = EnvironmentalLog::create([
             'batch_number' => $request->validated('batch_number'),
             ...$conditions,
         ]);
 
-        return back()->with('success', 'Conditions logged successfully.');
+        Inertia::flash('toast', [
+            'type' => 'success',
+            'message' => "Conditions logged for batch {$log->batch_number}.",
+        ]);
+
+        return back();
     }
 }
