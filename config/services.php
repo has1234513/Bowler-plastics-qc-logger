@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'open_meteo' => [
+        'base_url' => env('OPEN_METEO_BASE_URL', 'https://api.open-meteo.com/v1'),
+        'latitude' => env('FACTORY_LATITUDE', -26.2041),
+        'longitude' => env('FACTORY_LONGITUDE', 28.0473),
+        'timezone' => env('FACTORY_TIMEZONE', 'Africa/Johannesburg'),
+    ],
+
 ];
