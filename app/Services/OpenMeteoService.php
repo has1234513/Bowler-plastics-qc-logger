@@ -36,7 +36,7 @@ class OpenMeteoService
         return [
             'temperature_celsius' => (float) $current['temperature_2m'],
             'humidity_percent' => (int) $current['relative_humidity_2m'],
-            'logged_at' => CarbonImmutable::parse($current['time'])->shiftTimezone($config['timezone']),
+            'logged_at' => CarbonImmutable::parse($current['time'], $config['timezone'])->utc(),
         ];
     }
 }
