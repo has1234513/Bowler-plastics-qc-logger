@@ -14,6 +14,9 @@ _Be transparent about which AI tools you used and how. For example:_
 <!-- Write your notes here -->
 
  - _"I used Claude Opus 4.7 on the Pro plan to ensure my php and composer were installed and on the right versions"_
+ - _"I created a Project on claude and linked my repo to it as context"_
+ - _"I had and issue running the `composer setup` and resolved it by re-installing composer and sqlite"_
+ - _"
 
 
 ## Architecture Decisions
