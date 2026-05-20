@@ -55,13 +55,17 @@ export default function Welcome({
                                 Welcome to the Quality Control Environmental Logger
                             </h1>
                             <br></br>
+                            <h2 className="text-l font-light tracking-tight text-[#1b1b18] dark:text-[#EDEDEC]">
+                                Log ambient conditions against batch numbers to ensure optimal manufacturing quality.
+                            </h2>
+                            <br></br>
                             <ul className="flex gap-3 text-sm leading-normal">
                                 <li>
                                     <Link
                                         href="/qc"
                                         className="inline-block rounded-sm border border-black bg-[#1b1b18] px-5 py-1.5 text-sm leading-normal text-white hover:border-black hover:bg-black dark:border-[#eeeeec] dark:bg-[#eeeeec] dark:text-[#1C1C1A] dark:hover:border-white dark:hover:bg-white"
                                     >
-                                        Go to QC Dashboard
+                                        Go to Quality Control Dashboard
                                     </Link>
                                 </li>
                             </ul>
